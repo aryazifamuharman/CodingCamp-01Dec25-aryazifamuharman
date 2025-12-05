@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: #f2f2f2;
+  position: sticky;
+  top: 0;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* HOME */
+.home-section {
+  text-align: center;
+  padding: 100px 20px;
+  background: #fafafa;
+}
+
+/* PROFILE */
+.profile-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+}
+
+.team-card .circle {
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: auto;
+}
+
+/* MESSAGE SECTION */
+.message-section {
+  padding: 60px 20px;
+}
+
+.message-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+input, textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.output-box {
+  width: 300px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 768px) {
+  .team-container {
+      flex-direction: column;
+  }
+
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+}

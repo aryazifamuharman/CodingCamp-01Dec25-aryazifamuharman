@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Company Profile</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="logo">Finesse Laboratory</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#message">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME SECTION -->
+    <section id="home" class="home-section">
+        <h1>Hi <span id="username">There</span>, Welcome To Website</h1>
+        <p>Informasi website perusahaan</p>
+    </section>
+
+    <!-- OUR PROFILE -->
+    <section id="profile" class="profile-section">
+        <h2>Our Headquarter</h2>
+
+        <div class="team-container">
+            <div class="team-card">
+                <div class="circle"></div>
+                <p>Jakob</p>
+            </div>
+
+            <div class="team-card">
+                <div class="circle"></div>
+                <p>Barbara</p>
+            </div>
+
+            <div class="team-card">
+                <div class="circle"></div>
+                <p>Samantha</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MESSAGE SECTION -->
+    <section id="message" class="message-section">
+        <h2>Message Us</h2>
+
+        <div class="message-container">
+            <!-- FORM -->
+            <form id="messageForm" onsubmit="return validateForm()">
+                <label>Name</label>
+                <input type="text" id="name" placeholder="Your Name">
+
+                <label>Email</label>
+                <input type="text" id="email" placeholder="Your Email">
+
+                <label>Phone Number</label>
+                <input type="text" id="phone" placeholder="Your Phone Number">
+
+                <label>Message</label>
+                <textarea id="userMessage" placeholder="Your Message"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- OUTPUT -->
+            <div class="output-box">
+                <h3>Your Message Preview:</h3>
+                <p><strong>Name:</strong> <span id="out-name">-</span></p>
+                <p><strong>Email:</strong> <span id="out-email">-</span></p>
+                <p><strong>Phone:</strong> <span id="out-phone">-</span></p>
+                <p><strong>Message:</strong> <span id="out-msg">-</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
